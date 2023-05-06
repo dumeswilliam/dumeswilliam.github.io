@@ -22,6 +22,6 @@ var oLinks = {
 document.querySelectorAll('div[role="link"]').forEach(oItem => {
     var iId = oItem.getAttribute('data-shortcut-id');
     if (oLinks[iId]) {
-        oItem.addEventListener('click', () => window.open(oLinks[iId]));
+        oItem.addEventListener('click', () => window.open(oLinks[iId], '_blank'));
     }
 });
